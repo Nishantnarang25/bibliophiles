@@ -82,6 +82,5 @@ npm run dev
 3. Commit your changes.
 4. Push to your branch and create a pull request.
 
-## License
-MIT License
+
 
