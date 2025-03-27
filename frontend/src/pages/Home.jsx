@@ -4,6 +4,7 @@ import AddBook from "../components/AddBook";
 import BookList from "../components/BookList";
 
 export default function Home() {
+
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
@@ -11,10 +12,9 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="max-w-4xl mx-auto p-5">
-      <h1 className="text-4xl font-bold mb-4 text-center">Bibliophile's Corner</h1>
+    <div className="max-w-full min-h-screen mx-auto p-5">
       <AddBook setBooks={setBooks} />
-      <BookList books={books} setBooks={setBooks} /> {/* ✅ Pass setBooks here */}
+      <BookList books={books} setBooks={setBooks} /> 
     </div>
   );
 }
